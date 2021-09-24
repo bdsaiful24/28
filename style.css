@@ -1,0 +1,76 @@
+a{
+    text-decoration: none;
+}
+.header-menu{
+    z-index: 999;
+}
+.header-menu ul{}
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li a{
+    display: block;
+    padding: 1rem .5rem;
+    color: #000;
+}
+/* DropDown */
+.header-menu ul li ul{
+    position: absolute;
+    width: 200px;
+    top: 115%;
+    left: 0;
+    text-align: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .4s ease-in-out;
+}
+.header-menu ul li:hover ul{
+    transform: scaleY(1);
+}
+.header-menu ul li ul li a{
+    padding: .5rem 0;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.btn-primary{
+    background: #8490ff;
+}
+.btn-primary:hover{
+    background: rgb(117, 148, 216);
+}
+/* Counter Section */
+.counter-section{
+    background: #8490ff;
+    padding: 70px 0;
+}
+.fw-bold{
+    font-weight: 600!important;
+}
+.about-section p{
+    text-shadow: 0 1px 1px #000;
+
+}
+/* Pricing TAble */
+.pricing-section{
+    background: #f1f2fc;
+}
+.pricing-item{
+    background: #fff;
+    padding: 15px 25px 25px;
+}
+.pricing-item span{
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: #f1f2fc;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.pricing-item h5{}
+.pricing-item p{}
+.pricing-item ul{}
+.pricing-item ul li{
+    padding: .7rem 0;
+}
