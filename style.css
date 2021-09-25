@@ -4,7 +4,6 @@ a{
 .header-menu{
     z-index: 999;
 }
-.header-menu ul{}
 .header-menu ul li{
     position: relative;
 }
@@ -68,9 +67,42 @@ a{
     border-radius: 50%;
     font-size: 2rem;
 }
-.pricing-item h5{}
-.pricing-item p{}
-.pricing-item ul{}
 .pricing-item ul li{
     padding: .7rem 0;
+}
+/* team-section */
+.team-item {
+	margin-top: 40px;
+	position: relative;
+    padding: 35px 15px 20px;
+}
+.team-item img{
+    top: -50px;
+    left: 10px;
+}
+
+/* Responsive CSS */
+@media all and (max-width: 992px) {
+    .header-menu ul li {
+        width: 200px;
+    }
+    .header-menu ul li ul {
+        top: -80px;
+        left: 100%;
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+    .header-menu ul li ul li a {
+        padding: 1rem 0;
+    }
+    .banner-section img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .team-item {
+        margin-bottom: 50px;
+    }
+    .feedback{
+        text-align: center;
+    }
 }
